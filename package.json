@@ -1,0 +1,22 @@
+{
+  "name": "rusty-result-ts",
+  "version": "0.1.0",
+  "description": "A seamless recreation of Rust's Return type for TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xkonti/rusty-result-ts.git"
+  },
+  "keywords": ["rust", "typescript", "result", "return"],
+  "author": "Beniamin (Xkonti) Dudek <xkonti@xkonti.tech>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xkonti/rusty-result-ts/issues"
+  },
+  "homepage": "https://github.com/Xkonti/rusty-result-ts#readme"
+}
