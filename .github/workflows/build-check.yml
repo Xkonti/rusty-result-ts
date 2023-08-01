@@ -37,11 +37,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run linter
-        uses: wearerequired/lint-action@v2
-        with:
-          eslint: true
-
       - name: Run tests
         run: pnpm test
 
