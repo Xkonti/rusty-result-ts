@@ -1,22 +1,53 @@
 {
   "name": "rusty-result-ts",
-  "version": "0.1.0",
+  "private": false,
+  "version": "0.1.1",
   "description": "A seamless recreation of Rust's Return type for TypeScript",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
-  },
+  "homepage": "https://github.com/Xkonti/rusty-result-ts#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Xkonti/rusty-result-ts.git"
   },
-  "keywords": ["rust", "typescript", "result", "return"],
+  "keywords": [
+    "rust",
+    "typescript",
+    "result",
+    "return"
+  ],
   "author": "Beniamin (Xkonti) Dudek <xkonti@xkonti.tech>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Xkonti/rusty-result-ts/issues"
   },
-  "homepage": "https://github.com/Xkonti/rusty-result-ts#readme"
+  "type": "module",
+  "main": "./dist/rusty-result-ts.umd.cjs",
+  "module": "./dist/rusty-result-ts.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/rusty-result-ts.js",
+      "require": "./dist/rusty-result-ts.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.7",
+    "vite-plugin-dts": "^3.4.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^0.33.0"
+  }
 }
