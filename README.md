@@ -1,2 +1,3 @@
 # rusty-result-ts
-A seamless recreation of Rust's Return type for TypeScript
+
+A very simple recreation of Rust's Return type for TypeScript.
