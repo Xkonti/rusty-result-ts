@@ -4,6 +4,14 @@ A very simple recreation of Rust's Return type for TypeScript.
 
 ## Usage example
 
+Install the package:
+
+```bash
+npm install rusty-result-ts
+```
+
+Create a method that returns the `Result<success, error>` type:
+
 ```ts
 function ValidateNumber(value: number): Result<number, string> {
     if (value > 0) {
@@ -12,7 +20,11 @@ function ValidateNumber(value: number): Result<number, string> {
         return err('value must be greater than 0');
     }
 };
+```
 
+Use the method:
+
+```ts
 const result = ValidateNumber(10);
 if (result.isOk()) {
     console.log(result.value);
