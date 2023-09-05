@@ -2,6 +2,9 @@
 
 A very simple recreation of Rust's Return type for TypeScript.
 
+> [!WARNING]
+> This project was archived as there is an alternative package with pretty much same API but also many more features available: [supermacro/neverthrow](https://github.com/supermacro/neverthrow).
+
 ## Usage example
 
 Install the package:
